@@ -1,0 +1,16 @@
+<h1>{{data.name}}, </h1>
+
+<ul>
+  <li>Humidity: {{data.main.humidity}}</li>
+  <li>Temperature(average): {{data.main.temp}}</li>
+  <li>Temperature(high): {{data.main.temp_max}}</li>
+  <li>Temperature(low): {{data.main.temp_min}}</li>
+  <li>Status:{{data.weather[0].description}}</li>
+</ul>
+
+<img *ngIf="data.name == 'Seattle'" src="../assets/sa.jpg" >
+<img *ngIf="data.name == 'Burbank'" src="../assets/bur.jpg" >
+<img *ngIf="data.name == 'San Jose'" src="../assets/sj.jpg" >
+<img *ngIf="data.name == 'Dallas'" src="../assets/da.jpg" >
+<img *ngIf='data.name=="Washington"' src="../assets/wa.jpg" >
+<img *ngIf="data.name == 'Chicago'" src="../assets/ch.jpg" >
